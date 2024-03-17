@@ -1,0 +1,23 @@
+
+
+#creating a schema or type from what data we need to fetch
+
+#Query for getting data and mutation is for CUD
+
+
+#//defining method for graphql Query
+
+type Query{
+    allBooks:[Book] #array of books
+    getBook(bookId:Int):Book #Single Book
+}
+type Book{
+
+    id:ID!
+    title:String
+    author:String
+    price:Int
+    pages:Int
+    desc:String
+
+}
