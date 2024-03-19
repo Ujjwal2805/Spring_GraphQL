@@ -1,2 +1,25 @@
-schema: schema.graphql
-documents: '**/*.graphql'
+{
+
+#  schemaPath: schema.graphqls,
+#  "documents": '**/*.graphql',
+   schema:"schema.graphqls",
+
+
+  extensions:
+    {
+      endpoints:
+        {
+          Default GraphQL Endpoints:{
+                                      url: "http://localhost:8009/graphql",
+                                      headers:
+                                        {
+                                          "user-agent":"JS GraphQL"
+                                        },
+                                      introspect: false
+          }
+        }
+    },
+
+
+
+projects: "GraphQL"}
